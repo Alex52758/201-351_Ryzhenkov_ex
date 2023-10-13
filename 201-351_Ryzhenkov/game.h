@@ -30,6 +30,8 @@ public:
 //    QString Pass = 0;
 //    JsonModel::Row rowss = {Url, Login, Pass};
     QString pinCode = "1234";
+    QString randomNumbersqs[9];
+    QByteArray encryptedValue = 0;
 
 
 private slots:

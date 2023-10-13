@@ -36,3 +36,4 @@ QString Crypt::decrypt(QByteArray text, QString key, QString iv) {
 
   return decodedText;
 }
+
