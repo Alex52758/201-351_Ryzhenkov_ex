@@ -23,16 +23,16 @@ game::~game()
 }
 void game::gamecontrol()
 {
-    if (var == 4) {
+    if (var == 3) {
         QMessageBox msgBox;
         msgBox.setWindowTitle("Игра закончена");
-        QMessageBox::warning(this, "Игра закончена", QString::number(sum));
         QString text = QString::number(sum);
         msgBox.setText(text);
         msgBox.exec();
         ui->tableWidget->setRowCount(0);
         ui->label->setText("");
         var =0;
+        sum =0;
         randomhislo();
         gamefun();//происходит сброс игры
     }
