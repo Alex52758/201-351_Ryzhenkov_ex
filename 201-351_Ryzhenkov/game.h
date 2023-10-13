@@ -4,6 +4,8 @@
 #include <QTableWidgetItem>
 #include <QDialog>
 #include <QLineEdit>
+#include "jsonModel.h"
+#include "crypt.h"
 
 namespace Ui {
 class game;
@@ -23,13 +25,16 @@ public:
     void gamecontrol();
     int var = 0;
     QListWidget listWidget;
-    //    QLineEdit* lineEdit;
+//    QString Url = 0;
+//    QString Login = 0;
+//    QString Pass = 0;
+//    JsonModel::Row rowss = {Url, Login, Pass};
+    QString pinCode = "1234";
+    QString randomNumbersqs[9];
+    QByteArray encryptedValue = 0;
+
 
 private slots:
-    //    void on_listWidget_itemClicked(QListWidgetItem *item);
-
-    //    void on_tableWidget_itemClicked(QTableWidgetItem *item);
-
 
 private:
     Ui::game *ui;
