@@ -4,6 +4,7 @@
 #include "QMessageBox"
 #include "QString"
 #include "ui_mainwindow.h"
+#include "game.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -20,10 +21,10 @@ void MainWindow::on_pushButton_clicked() {
 
 
     if ("1111" == pinCode) {  // сравнение расшифрованного текста с введенным пинкодом
-//        game window;
-//        window.setModal(true);
+        game window;
+        window.setModal(true);
         this->close();
-//        window.exec();
+        window.exec();
     } else {
         QMessageBox::warning(this, "Authotization", "Pin is incorrect");
     }
